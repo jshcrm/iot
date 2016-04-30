@@ -1,0 +1,25 @@
+{
+  "name": "iot",
+  "version": "1.0.0",
+  "description": "iot node-python-mqtt app",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^2.1.18",
+    "mqtt": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshcrim/iot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshcrim/iot/issues"
+  },
+  "homepage": "https://github.com/joshcrim/iot#readme"
+}

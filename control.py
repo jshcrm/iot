@@ -21,10 +21,4 @@ while True:
 	elif voice.q.get() == "hi":
 		controller.get_status()
 		voice.q.task_done()
-
 	pass
-
-#class Amy(object):
-
-#	def __init__(self):
-#		pass
