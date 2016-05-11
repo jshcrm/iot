@@ -20,8 +20,8 @@ function setupCollection(err,db) {
 function insertEvent(topic, message) {
 	var key=topic.replace(deviceRoot, '')
 	collection.update(
-		{_id:key},
-		{ $push: { events: { value:message.toString(), when:new Date() } } },
+		{ _id:key },
+		{ $push: { value:message.toString(), when:new Date() } },
 		{ upsert:true },
 		function(err,docs) {
 			if(err) { console.log("Insert fail"); }
