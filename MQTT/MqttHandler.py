@@ -31,7 +31,7 @@ class MqttHandler(Thread):
 
 	def on_connect(self, client, userdata, flags, rc):
 		self.client.publish(self.topic, "Connected")
-		print(client.client_id + "Connected")
+		print(self.client_id + "Connected")
 
 	def on_subscribe(self, client, userdata, mid, granted_qos):
 		self.client.publish(self.topic, payload="3")
